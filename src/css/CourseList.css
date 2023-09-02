@@ -1,0 +1,128 @@
+.courselist-wrapper-container-1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border-radius: 7px 7px 7px 7px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.courselist-wrapper-container-2 {
+    height: 100%;
+    background-color: white;
+    width: 98%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .courselist-wrapper-container-2 {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+.courselist-wrapper-container-2 .courselist-Heading {
+    font-size: 1.3rem;
+    margin-bottom: 1px;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 500;
+    /* line-height: 10px; */
+}
+
+.item-page {
+    position: relative;
+    background: #fff;
+    color: #555;
+    padding: 7px;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.courseLista {
+    text-decoration: none;
+    color: #1a528c;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid rgba(196, 196, 196, 0.384);
+    padding-left: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.courseDes-Heading {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.courseDes-Heading h1,
+.courseDes-Heading h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.credits {
+    font-weight: bold;
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.prereq,
+.overlap {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.courseD-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #192f59;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.courseD-mainHeading {
+    font-weight: bold;
+    color: #192f59;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}

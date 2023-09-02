@@ -1,0 +1,288 @@
+/* Faculty Css Start */
+
+.loader-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader--ring {
+    display: inline-block;
+    position: fixed;
+    top: 40%;
+    left: 49%;
+    height: 100px;
+    width: 100px;
+}
+
+.loader--ring div {
+    display: block;
+    position: absolute;
+    animation: loader--ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-color: #00539f transparent transparent transparent;
+    margin: 6px;
+    height: 45px;
+    width: 45px;
+}
+
+.loader--ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loader--ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loader--ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes loader--ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.col-12 p {
+    margin: 5px;
+}
+
+.fontem {
+    font-size: 0.95rem;
+}
+
+.fontem-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.fontem-heading-phd {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.border-color {
+    border: 1px solid #192f59;
+    border-right: 0px;
+}
+
+.border-color-contact {
+    border: 1px solid #192f59;
+}
+
+.page_title a {
+    text-decoration: none;
+
+}
+
+.bg-designations-color {
+    background-color: #555;
+}
+
+.whiteHead u {
+    font-size: 1rem;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.img-css {
+    width: 50%;
+    height: auto;
+}
+
+.box-size {
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+.border-color-2 {
+    border: 1px solid #192f59;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.border-color-contact-2 {
+    border: 1px solid #192f59;
+    border-top: 0px;
+}
+
+.faculty-and-phd-responsive {
+    padding: 0;
+}
+
+@media screen and (max-width:995px) {
+    .fontem {
+        font-size: 0.7rem;
+    }
+
+    .fontem-heading {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .fontem-heading-phd {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+
+    .d_block {
+        display: none;
+    }
+
+    .box-size {
+        box-sizing: border-box;
+        padding: 15px;
+    }
+
+    .img-css {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:773px) {
+    .fontem {
+        font-size: 0.6rem;
+    }
+
+    .fontem-heading {
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .fontem-heading-phd {
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+
+    .col-12 p {
+        margin: 0px;
+        padding: 0;
+    }
+
+    .box-size {
+        box-sizing: border-box;
+        padding: 8px;
+    }
+
+    .img-css {
+        width: 80%;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width:540px) {
+
+    .img-css {
+        width: 80%;
+        height: 90%;
+    }
+
+    html {
+        line-height: 0;
+    }
+
+    .d_block2 {
+        display: none;
+    }
+
+    .fontem {
+        font-size: 0.52rem;
+    }
+
+    .fontem-heading {
+        font-size: 0.41rem;
+        font-weight: bold;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+    .fontem-heading-phd {
+        font-size: 0.4rem;
+        font-weight: bold;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+}
+
+/* Faculty Css End */
+
+
+
+
+/* Student Css Start */
+
+.batch2019-table-scroll,
+.batch2017-table-scroll,
+.batch2020-table-scroll,
+.batch2021-table-scroll,
+.batch2022-table-scroll,
+.batch2016-table-scroll,
+.batch2015-table-scroll,
+.batch2018-table-scroll {
+    overflow-x: auto;
+}
+
+.batch2019-table-scroll table,
+.batch2022-table-scroll table,
+.batch2017-table-scroll table,
+.batch2016-table-scroll table,
+.batch2015-table-scroll table,
+.batch2020-table-scroll table,
+.batch2021-table-scroll table,
+.batch2018-table-scroll table {
+    width: 90%;
+}
+
+@media screen and (max-width: 780px) {
+    .batch2020-table-scroll table {
+        width: 615px;
+    }
+
+    .batch2019-table-scroll table,
+    .batch2022-table-scroll table,
+    .batch2017-table-scroll table,
+    .batch2016-table-scroll table,
+    .batch2015-table-scroll table,
+    .batch2021-table-scroll table,
+    .batch2018-table-scroll table {
+        width: 620px;
+    }
+}
+
+/* Student Css End */
+
+
+
+/* Staff Css Start */
+
+.staff-table-scroll {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.staff-table-scroll table {
+    width: 90%;
+}
+
+@media screen and (max-width: 520px) {
+    .staff-table-scroll table {
+        width: 520px;
+    }
+}
+
+
+/* Staff Css End */

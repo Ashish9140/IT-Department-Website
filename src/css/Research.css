@@ -1,0 +1,161 @@
+/* Research Area Css Start */
+
+.research-area-table-scroll {
+    overflow-x: auto;
+}
+
+.research-area-table-scroll table {
+    width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+    .research-area-table-scroll table {
+        width: 530px;
+    }
+}
+
+/* Research Area Css End*/
+
+
+
+
+/* Research Papers Css Start*/
+
+.main-page-papers {
+    color: rgb(4, 30, 102);
+    font-size: 18px;
+    text-align: justify;
+}
+
+.papers-wrapper-container-1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border-radius: 7px 7px 7px 7px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    padding: 10px;
+    /* padding-top: 30px; */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.papers-wrapper-container-2 {
+    height: 100%;
+    background-color: white;
+    width: 98%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.papers-wrapper-container-2 .papers-Heading {
+    font-size: 1.3rem;
+    margin-bottom: 1px;
+    color: white;
+    font-family: georgia, palatino;
+    border-bottom: 1px dotted #e1e1e1;
+    font-weight: 500;
+    background-image: linear-gradient(rgb(4, 30, 102), #0d5686, rgb(20, 20, 167)) !important;
+    /* text-decoration: underline; */
+    /* line-height: 10px; */
+    text-align: center;
+    padding: 5px;
+}
+
+.font-of-papers-years {
+    font-family: arial, helvetica, sans-serif;
+    font-size: x-large;
+}
+
+.font-of-papers-content-no {
+    font-family: arial, helvetica, sans-serif;
+    font-size: medium;
+}
+
+@media screen and (max-width: 600px) {
+    .papers-wrapper-container-2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* Research Papers Css End*/
+
+
+
+/* Research Labs Css Start*/
+
+
+.research-labs ul li {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    .research-labs ul li span {
+        font-size: 11px;
+    }
+}
+
+/* Research Labs Css End*/
+
+
+
+/* Research Labs Page Css Start*/
+
+
+.courselist-wrapper-container-1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border-radius: 7px 7px 7px 7px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.courselist-wrapper-container-2 {
+    height: 100%;
+    background-color: white;
+    width: 98%;
+    padding-top: 10px;
+    /* padding-left: 20px; */
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.courselist-wrapper-container-2 .courselist-Heading {
+    font-size: 1.3rem;
+    margin-bottom: 1px;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 500;
+    /* line-height: 10px; */
+}
+
+
+/* Research Labs Page Css End*/
+/* E-gov portal Css End*/
+.e-governance-portal {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px) {
+    .e-governance-portal {
+        margin-top: 5px;
+    }
+}
+
+.external-link {
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+
+/* E-gov portal Css End*/

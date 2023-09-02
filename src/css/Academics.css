@@ -1,0 +1,484 @@
+/* B Tech Degree Program Css Start */
+
+.btdeg-wrapper-container-1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border-radius: 7px 7px 7px 7px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    /* padding: 10px; */
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-right: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.btdeg-wrapper-container-2 {
+    height: 100%;
+    background-color: white;
+    width: 100%;
+    /* padding-top: 10px;
+    padding-left: 20px; */
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.btdeg-wrapper-container-2 .btdeg-Heading {
+    font-size: 20px;
+    margin-bottom: 1px;
+    font-family: 'Cuprum', sans-serif;
+    border-bottom: 1px dotted #e1e1e1;
+    font-weight: bold;
+
+    /* line-height: 10px; */
+}
+
+.btdeg-Heading-motto {
+    font-size: 2rem;
+    margin-bottom: 1px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    /* border-bottom: 1px dotted #e1e1e1; */
+    font-weight: 500;
+    margin-top: 1rem;
+    -webkit-user-select: none;
+}
+
+.btdeg-accordian-active {
+    width: 9rem;
+    border: none !important;
+    padding: 0.1rem 1.25rem;
+}
+
+.btdeg-curr-width {
+    width: 10.2rem !important;
+}
+
+.btdeg-curr-width2 {
+    width: 25.3rem !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: rgb(4, 30, 102) !important;
+    background-color: #FFF;
+    box-shadow: none !important;
+}
+
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:active {
+    color: rgb(4, 30, 102) !important;
+    text-decoration: none !important;
+    box-shadow: 0px !important;
+
+}
+
+.accordion-button:focus {
+
+    z-index: 3;
+    border-color: white !important;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem #FFF !important;
+    background-color: #FFF !important;
+}
+
+.btdeg-accordion-bd {
+    border: none !important;
+    font-size: 20px;
+}
+
+.btdeg-font-style {
+    color: #555;
+    /* text-shadow: 0 1px 0 #fdfdf; */
+    font-size: 17px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 600px) {
+    .btdeg-font-style {
+        color: #555;
+        /* text-shadow: 0 1px 0 #fdfdf; */
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .btdeg-Heading-motto {
+        font-size: 1rem;
+
+    }
+}
+
+.btdeg-strong {
+    color: rgb(4, 30, 102);
+}
+
+.btdeg-heading-overall-credit strong {
+    color: rgb(4, 30, 102);
+    font-size: 27px;
+}
+
+#btdeg-overall-credit-table-uc-ue td {
+    color: #555;
+    font-size: 1.23rem;
+}
+
+#btdeg-overall-credit-table-tbody td {
+    padding: 5px;
+}
+
+/* B Tech Degree Program Css End */
+
+
+/*pso Css Start */
+.pso-heading-responsive {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    border-bottom: 1px dotted grey;
+    color: rgb(4, 30, 102);
+}
+
+
+@media screen and (max-width: 600px) {
+    .pso-responsive-font li {
+        font-size: 13px;
+    }
+
+    .pso-heading-responsive {
+        font-size: 16px;
+
+    }
+}
+
+
+/*pso Css end */
+
+
+/*vision mission Css Start */
+
+.vismis-wrapper-container-1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border-radius: 7px 7px 7px 7px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    padding: 10px;
+    /* padding-top: 30px; */
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.vismis-wrapper-container-2 {
+    height: 100%;
+    background-color: white;
+    width: 98%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .vismis-wrapper-container-2 {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+}
+
+.vismis-wrapper-container-2 .vismis-Heading {
+    font-size: 1.3rem;
+    margin-bottom: 1px;
+    color: #0d5686;
+    font-family: georgia, palatino;
+    border-bottom: 1px dotted #e1e1e1;
+    font-weight: 500;
+}
+
+.vismis-Heading-motto {
+    font-size: 2rem;
+    margin-bottom: 1px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    /* border-bottom: 1px dotted #e1e1e1; */
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .vismis-Heading-motto {
+        font-size: 1rem;
+
+    }
+
+    .mission-content ul li {
+        font-family: georgia, palatino;
+        font-size: 1px;
+    }
+}
+
+.mission-content ul li {
+    font-family: georgia, palatino;
+    font-size: medium;
+    padding-right: 10px;
+}
+
+.vision-mission-heading {
+    font-size: large;
+    color: #2471a3;
+    font-family: georgia, palatino;
+}
+
+.vismis-wrapper-container-2 hr {
+    border: 2px solid #B2BABB;
+    height: 0px;
+    width: 21%;
+    margin: 9px auto;
+    margin-bottom: 0px;
+}
+
+.vision-mission-content p {
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .vision-mission-content p {
+        font-size: 13px;
+
+    }
+
+    .mission-content p {
+        font-size: 13px;
+    }
+}
+
+/*vision mission Css End */
+
+
+/* POs Css Start */
+
+.tr-content {
+    padding-top: 20px;
+    /* box-sizing: border-box; */
+    text-align: justify;
+    font-size: 18px;
+}
+
+.tr-content strong {
+    font-size: large;
+    word-spacing: 1px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0d5686;
+}
+
+.color-heading-pos {
+    color: #192f59 !important;
+    font-weight: 600 !important;
+    font-size: 1.3rem !important;
+}
+
+@media screen and (max-width: 600px) {
+    .tr-content {
+        padding-top: 20px;
+        /* box-sizing: border-box; */
+        text-align: justify;
+        font-size: 12px;
+    }
+
+    .tr-content strong {
+        font-size: medium;
+
+    }
+
+    .tr-content td {
+        padding: 4px;
+
+    }
+}
+
+/* POs Css End */
+
+
+
+/* Faculty Coordinators Css Start */
+
+.faculty-coordinators-table-scroll {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.faculty-coordinators-table-scroll table {
+    width: 90%;
+}
+
+@media screen and (max-width: 520px) {
+    .faculty-coordinators-table-scroll table {
+        width: 477px;
+    }
+}
+
+/* Faculty Coordinators Css End */
+
+
+
+/* Departmental Committee Css Start */
+
+.DepartmentalC-table-scroll {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.DepartmentalC-table-scroll table {
+    width: 90%;
+}
+
+@media screen and (max-width: 520px) {
+    .DepartmentalC-table-scroll table {
+        width: 465px;
+    }
+}
+
+/* Departmental Committee Css End */
+
+
+
+
+
+
+/* Department NewsLetter Css Start */
+
+.newsltr-wrapper-container-1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border-radius: 7px 7px 7px 7px;
+    border: 3px solid white;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.newsltr-wrapper-container-2 {
+    height: 100%;
+    background-color: white;
+    width: 98%;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+    .newsltr-wrapper-container-2 {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+}
+
+
+
+.newsltr-wrapper-container-2 .newsltr-Heading {
+    font-size: 1.5em;
+    margin-bottom: 1px;
+    font-family: 'Cuprum', sans-serif;
+    border-bottom: 2px dotted #e1e1e1;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.newsltr-words-hod-heading,
+.newsltr-alumini-init-heading {
+    line-height: 1.38;
+    margin-top: 18pt;
+    margin-bottom: 6pt;
+}
+
+.newsltr-heading-brown-font-style {
+    font-size: 0.9em;
+    font-family: Arial;
+    color: #980000;
+}
+
+.newsltr-words-hod-content p {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: justify;
+    letter-spacing: 0.5px;
+    margin: 0 12px;
+    line-height: 1.8;
+}
+
+.newsltr-alumini-initiative-content-img,
+.newsltr-faculty-awards-content-img {
+
+    text-align: justify;
+    letter-spacing: 1.38;
+
+}
+
+.newsltr-alumini-initiative-content-img-2 {
+    text-align: justify;
+    letter-spacing: 1.38;
+    margin-top: 10px;
+}
+
+.newsltr-alumini-initiative-content-img p,
+.newsltr-faculty-awards-content-img p {
+    text-align: justify;
+}
+
+.newsltr-alumini-initiative-content-img-2 p {
+    text-align: justify;
+}
+
+.newsltr-feedback {
+    margin-top: 20px;
+}
+
+.newsltr-feedback h3 {
+    font-weight: bolder;
+    font-size: 1.6em;
+}
+
+
+@media screen and (min-width: 320px) {
+    .newsltr-wrapper-container-2 {
+        font-size: calc(12px + 19* ((100vw - 320px) / 4500));
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .newsltr-wrapper-container-2 {
+        font-size: calc(13px + 19* ((100vw - 320px) / 4000));
+    }
+}
+
+.department-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.department-video video {
+    width: 470px;
+}
+
+@media screen and (max-width: 470px) {
+    .department-video video {
+        width: 100%;
+    }
+}
+
+/* Department NewsLetter Css End */

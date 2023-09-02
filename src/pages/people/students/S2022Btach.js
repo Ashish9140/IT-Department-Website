@@ -1,0 +1,473 @@
+import { useState, useEffect } from "react";
+import {
+    useNavigate
+} from "react-router-dom";
+
+import Loader from '../../../components/Loader'
+
+const S2022Batch = () => {
+    const navigate = useNavigate();
+    const [seaechInput, setSearchInput] = useState('');
+    const [s2022s, setS2022s] = useState();
+    const [filteredStudents, setFilteredStudents] = useState();
+
+
+    useEffect(async () => {
+        const stu = [
+            {
+                "rN0": "2022NITSGR0991",
+                "enroll": "2022BITE001",
+                "name": "RIZWAN AHMAD SHAH"
+            },
+            {
+                "rN0": "2022NITSGR0971",
+                "enroll": "2022BITE002",
+                "name": "KHUSHBOO DAR"
+            },
+            {
+                "rN0": "2022NITSGR0964",
+                "enroll": "2022BITE003",
+                "name": "HITESH BHARDWAJ"
+            },
+            {
+                "rN0": "2022NITSGR0993",
+                "enroll": "2022BITE004",
+                "name": "MOHAMMAD MUZAMIL BHAT"
+            },
+            {
+                "rN0": "2022NITSGR0986",
+                "enroll": "2022BITE005",
+                "name": "FURQAN MUSHTAQ MAKHDOOMI"
+            },
+            {
+                "rN0": "2022NITSGR0987",
+                "enroll": "2022BITE006",
+                "name": "MOHAMMAD OYAISS USSMAN"
+            },
+            {
+                "rN0": "2022NITSGR0996",
+                "enroll": "2022BITE007",
+                "name": "KARAN KHARADI"
+            },
+            {
+                "rN0": "2022NITSGR0968",
+                "enroll": "2022BITE008",
+                "name": "TAVAHEED TARIQ BHAT"
+            },
+            {
+                "rN0": "2022NITSGR0988",
+                "enroll": "2022BITE009",
+                "name": "MUSKAAN CHOUDHARY"
+            },
+            {
+                "rN0": "2022NITSGR0960",
+                "enroll": "2022BITE010",
+                "name": "SIBGAT FAROOQ"
+            },
+            {
+                "rN0": "2022NITSGR0973",
+                "enroll": "2022BITE011",
+                "name": "SHIV OM NARANG"
+            },
+            {
+                "rN0": "2022NITSGR0974",
+                "enroll": "2022BITE012",
+                "name": "BURHAAN RASHEED ZARGAR"
+            },
+            {
+                "rN0": "2022NITSGR0962",
+                "enroll": "2022BITE013",
+                "name": "NAVNEET SINGH"
+            },
+            {
+                "rN0": "2022NITSGR0959",
+                "enroll": "2022BITE014",
+                "name": "DREVJOT SINGH"
+            },
+            {
+                "rN0": "2022NITSGR0967",
+                "enroll": "2022BITE015",
+                "name": "SAHIL KUMAR"
+            },
+            {
+                "rN0": "2022NITSGR0984",
+                "enroll": "2022BITE016",
+                "name": "BENISH AIJAZ"
+            },
+            {
+                "rN0": "2022NITSGR0961",
+                "enroll": "2022BITE017",
+                "name": "FAYAZ ALI"
+            },
+            {
+                "rN0": "2022NITSGR0975",
+                "enroll": "2022BITE018",
+                "name": "VARDAN PAL"
+            },
+            {
+                "rN0": "2022NITSGR1004",
+                "enroll": "2022BITE019",
+                "name": "KASHISH"
+            },
+            {
+                "rN0": "2022NITSGR0963",
+                "enroll": "2022BITE020",
+                "name": "MOHAMMED MOHSEN PEERZADA"
+            },
+            {
+                "rN0": "2022NITSGR1000",
+                "enroll": "2022BITE021",
+                "name": "KANCHAN KUMARI"
+            },
+            {
+                "rN0": "2022NITSGR0985",
+                "enroll": "2022BITE022",
+                "name": "RITISH SHARMA"
+            },
+            {
+                "rN0": "2022NITSGR0994",
+                "enroll": "2022BITE023",
+                "name": "SAMIKSHA"
+            },
+            {
+                "rN0": "2022NITSGR0977",
+                "enroll": "2022BITE024",
+                "name": "SAHIL"
+            },
+            {
+                "rN0": "2022NITSGR0976",
+                "enroll": "2022BITE025",
+                "name": "VISHAL KUMAR YADAV"
+            },
+            {
+                "rN0": "2022NITSGR0999",
+                "enroll": "2022BITE026",
+                "name": "TUFAD NAIK"
+            },
+            {
+                "rN0": "2022NITSGR1003",
+                "enroll": "2022BITE034",
+                "name": "NITIN KUNDAL"
+            },
+            {
+                "rN0": "2022NITSGR0965",
+                "enroll": "2022BITE035",
+                "name": "VANSH CHARAK"
+            },
+            {
+                "rN0": "2022NITSGR0989",
+                "enroll": "2022BITE036",
+                "name": "DEV KARAN"
+            },
+            {
+                "rN0": "2022NITSGR1005",
+                "enroll": "2022BITE037",
+                "name": "U RAJESHWAR"
+            },
+            {
+                "rN0": "2022NITSGR0982",
+                "enroll": "2022BITE038",
+                "name": "ARYAN VERMA"
+            },
+            {
+                "rN0": "2022NITSGR1014",
+                "enroll": "2022BITE039",
+                "name": "SHOAIB AKHTER"
+            },
+            {
+                "rN0": "2022NITSGR0995",
+                "enroll": "2022BITE040",
+                "name": "SAKSHAM MAURYA"
+            },
+            {
+                "rN0": "2022NITSGR0978",
+                "enroll": "2022BITE041",
+                "name": "RAKSHIT TRATTHA"
+            },
+            {
+                "rN0": "2022NITSGR1001",
+                "enroll": "2022BITE042",
+                "name": "PARIDHI"
+            },
+            {
+                "rN0": "2022NITSGR0979",
+                "enroll": "2022BITE043",
+                "name": "ANOOP JANGRAL"
+            },
+            {
+                "rN0": "2022NITSGR1023",
+                "enroll": "2022BITE044",
+                "name": "KHUSHI KESHRI"
+            },
+            {
+                "rN0": "2022NITSGR0997",
+                "enroll": "2022BITE045",
+                "name": "KASI REDDY VISHNU VARDHAN REDD"
+            },
+            {
+                "rN0": "2022NITSGR1011",
+                "enroll": "2022BITE046",
+                "name": "KUTHADI SAI SIDDARTH"
+            },
+            {
+                "rN0": "2022NITSGR1029",
+                "enroll": "2022BITE047",
+                "name": "MOHAMMAD HUZAIF"
+            },
+            {
+                "rN0": "2022NITSGR1028",
+                "enroll": "2022BITE048",
+                "name": "AFSHEEN SAJAD"
+            },
+            {
+                "rN0": "2022NITSGR1010",
+                "enroll": "2022BITE049",
+                "name": "GAZI MOHAMMAD RAYAN SHAH"
+            },
+            {
+                "rN0": "2022NITSGR1009",
+                "enroll": "2022BITE050",
+                "name": "MRIDUL KUMAR"
+            },
+            {
+                "rN0": "2022NITSGR1026",
+                "enroll": "2022BITE051",
+                "name": "MANIK SHIVGOTRA"
+            },
+            {
+                "rN0": "2022NITSGR1008",
+                "enroll": "2022BITE052",
+                "name": "RISHU KUMAR"
+            },
+            {
+                "rN0": "2022NITSGR1006",
+                "enroll": "2022BITE053",
+                "name": "MUSHARAF MAQBOOL"
+            },
+            {
+                "rN0": "2022NITSGR1020",
+                "enroll": "2022BITE054",
+                "name": "MOHAMMAD HASHID BEG"
+            },
+            {
+                "rN0": "2022NITSGR1018",
+                "enroll": "2022BITE055",
+                "name": "SHREESH SINGH CHAUHAN"
+            },
+            {
+                "rN0": "2022NITSGR1031",
+                "enroll": "2022BITE056",
+                "name": "DIVYA TRIVEDI"
+            },
+            {
+                "rN0": "2022NITSGR1007",
+                "enroll": "2022BITE057",
+                "name": "ABRAR UL RIYAZ"
+            },
+            {
+                "rN0": "2022NITSGR0970",
+                "enroll": "2022BITE058",
+                "name": "ALAPATI HARSHA VARDHAN SAI"
+            },
+            {
+                "rN0": "2022NITSGR0992",
+                "enroll": "2022BITE059",
+                "name": "PRIYANSHU KUMAR"
+            },
+            {
+                "rN0": "2022NITSGR1012",
+                "enroll": "2022BITE060",
+                "name": "NENAVATH SRIJA"
+            },
+            {
+                "rN0": "2022NITSGR1032",
+                "enroll": "2022BITE061",
+                "name": "NEERAJ SHARMA"
+            },
+            {
+                "rN0": "2022NITSGR1033",
+                "enroll": "2022BITE062",
+                "name": "VIVEK RATHORE"
+            },
+            {
+                "rN0": "2022NITSGR1030",
+                "enroll": "2022BITE063",
+                "name": "DADI SASHANK SATYA VISWANADH"
+            },
+            {
+                "rN0": "2022NITSGR1037",
+                "enroll": "2022BITE064",
+                "name": "ENUKONDA VISHNU VARDHAN REDD"
+            },
+            {
+                "rN0": "2022NITSGR0983",
+                "enroll": "2022BITE065",
+                "name": "SANCHARI SINGH"
+            },
+            {
+                "rN0": "2022NITSGR1036",
+                "enroll": "2022BITE066",
+                "name": "SAIF UD DIN"
+            },
+            {
+                "rN0": "2022NITSGR1015",
+                "enroll": "2022BITE067",
+                "name": "CHHAVI SARSWAT"
+            },
+            {
+                "rN0": "2022NITSGR1038",
+                "enroll": "2022BITE068",
+                "name": "TEJPAL SINGH"
+            },
+            {
+                "rN0": "2022NITSGR1019",
+                "enroll": "2022BITE069",
+                "name": "YASH SIMAR"
+            },
+            {
+                "rN0": "2022NITSGR1002",
+                "enroll": "2022BITE070",
+                "name": "GOGINA SRIRAM"
+            },
+            {
+                "rN0": "2022NITSGR1013",
+                "enroll": "2022BITE071",
+                "name": "OM GUPTA"
+            },
+            {
+                "rN0": "2022NITSGR1021",
+                "enroll": "2022BITE072",
+                "name": "AVTAR SINGH"
+            },
+            {
+                "rN0": "2022NITSGR1035",
+                "enroll": "2022BITE073",
+                "name": "SLOK KUMAR YASH"
+            },
+            {
+                "rN0": "2022NITSGR1017",
+                "enroll": "2022BITE074",
+                "name": "RAJEEV SHARMA"
+            },
+            {
+                "rN0": "2022NITSGR1039",
+                "enroll": "2022BITE075",
+                "name": "ANUJ PRATAP SINGH"
+            },
+            {
+                "rN0": "2022NITSGR1025",
+                "enroll": "2022BITE076",
+                "name": "SHUBHAM KUMAR"
+            },
+            {
+                "rN0": "2022NITSGR1034",
+                "enroll": "2022BITE077",
+                "name": "VIKAS KUMAR"
+            },
+            {
+                "rN0": "2022NITSGR1016",
+                "enroll": "2022BITE078",
+                "name": "OMPRAKASH"
+            },
+            {
+                "rN0": "2022NITSGR1024",
+                "enroll": "2022BITE079",
+                "name": "DIVYANSH RADHA"
+            },
+            {
+                "rN0": "2022NITSGR1041",
+                "enroll": "2022BITE080",
+                "name": "AYASHA NEERAJ"
+            },
+            {
+                "rN0": "2022NITSGR1042",
+                "enroll": "2022BITE081",
+                "name": "PAVAN GARG"
+            },
+            {
+                "rN0": "2022NITSGR1022",
+                "enroll": "2022BITE082",
+                "name": "SALLANGI ROHITH"
+            },
+            {
+                "rN0": "2022NITSGR1040",
+                "enroll": "2022BITE083",
+                "name": "TEJAL KUMARI"
+            },
+            {
+                "rN0": "2022NITSGR1043",
+                "enroll": "2022BITE084",
+                "name": "SWAPNIL GAUTAM"
+            },
+            {
+                "rN0": "2022NITSGR1027",
+                "enroll": "2022BITE085",
+                "name": "SAGAR"
+            }
+        ]
+        setS2022s(stu);
+        setFilteredStudents(stu);
+    }, [])
+
+    const filterSearch = (value) => {
+        setSearchInput(value);
+        let filterData;
+        if (value.includes("2022"))
+            filterData = s2022s.filter(stdnt => stdnt.enroll.toLowerCase().includes(value.toLowerCase()));
+        else
+            filterData = s2022s.filter(stdnt => stdnt.name.toLowerCase().includes(value.toLowerCase()));
+        setFilteredStudents(filterData);
+    }
+
+    return (
+        // <Loader />
+        <div className="batch2022 container1">
+            <div className="history">
+                <i className="fa-solid fa-circle-left" onClick={() => navigate(-1)}></i>
+                <i className="fa-solid fa-circle-right" onClick={() => navigate(1)}></i>
+            </div>
+            <div className=" container-fluid container2">
+                <h2 className="page_title" style={{ fontSize: "20px", fontWeight: "bold", width: "90%", margin: "0 auto", borderBottom: "1px dotted gray" }}>2022 IT Students</h2>
+                <div className="wrap">
+                    <div className="search">
+                        <input type="text" className="searchTerm" placeholder="Search by Name or Enroll" value={seaechInput} onChange={(e) => { filterSearch(e.target.value) }} />
+                        <button type="submit" className="searchButton">
+                            <i className="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <div className="batch2022-table-scroll">
+                    {(filteredStudents === undefined) ?
+                        <Loader />
+                        :
+                        <table id="customers">
+                            <thead>
+                                <tr className="head">
+                                    <th>ID</th>
+                                    <th>Registration Number</th>
+                                    <th>Name</th>
+                                    <th>Enrollment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {filteredStudents.map((stdnt, index) => {
+                                    return (
+                                        <tr className="rows" key={index}>
+                                            <td>{index + 1}</td>
+                                            <td>{stdnt.rN0}</td>
+                                            <td>{stdnt.name}</td>
+                                            <td>{stdnt.enroll}</td>
+                                        </tr>
+                                    );
+                                })}
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+            <a href="/syllabus/2022.pdf" download style={{ display: "inline-block", textAlign: "end", width: "96%" }}>Download 2022 Batch PDF</a>
+        </div >
+    )
+}
+
+export default S2022Batch

@@ -1,0 +1,48 @@
+/* Award Css Start */
+
+
+.student-awards-ul li {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.student-award-heading {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .student-award-heading {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .student-awards-ul {
+        padding-left: 1rem;
+    }
+
+    .student-awards-ul li {
+        font-size: medium;
+    }
+}
+
+/* Award Css End */
+
+
+/* Facilities Css Start */
+.heading-facilities a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.blue-heading-facilities {
+    color: #0f4c7a;
+    font-weight: 100;
+}
+
+
+/* Facilities Css End */

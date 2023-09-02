@@ -1,0 +1,213 @@
+/* Push Forward and Backward Buttons Css Start */
+.history {
+    margin-right: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+.history i {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.history i:first-child:hover {
+    color: red;
+}
+
+.history i:last-child:hover {
+    color: green;
+}
+
+@media screen and (max-width: 600px) {
+    .history {
+        display: none;
+    }
+}
+
+/* Push Forward and Backward Buttons Css End */
+
+.hover-1 {
+    position: relative;
+    color: blue;
+    text-decoration: none;
+    line-height: 24px;
+    display: inline;
+}
+
+.hover-1:before,
+.hover-1:after {
+    content: '';
+    position: absolute;
+    transition: transform .5s ease;
+}
+
+.hover-1 {
+    padding-top: 10px;
+    /* visibility: hidden; */
+}
+
+.hover-1:before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.4px;
+    background: blue;
+    transform: scaleX(0);
+}
+
+.hover-1:hover:before {
+    transform: scaleX(1);
+}
+
+.batch2019-table-scroll {
+    min-height: 30vh;
+}
+
+
+.container1 {
+    height: 100%;
+    background-color: rgba(250, 253, 253, 0.808);
+    border: 3px solid white;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 0 1px rgb(0 0 2 / 10%), 0 1px 0 rgb(0 0 2 / 15%), 0 1px 1px rgb(0 0 2 / 10%);
+    padding: 3px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.container2 {
+    height: 100%;
+    background-color: white;
+    width: 100%;
+    /* position: relative;
+    right: 20px; */
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .container2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+/* List Style */
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    /* width: 90%; */
+    margin: 0px auto;
+    border: 2px solid black;
+}
+
+
+/* List Style */
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    text-align: left;
+    background-color: #192f59;
+    color: white;
+}
+
+.std {
+    display: flex;
+    min-height: 450px;
+    flex-direction: column;
+}
+
+.std a {
+    margin: 15px;
+    text-decoration: none;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.search {
+    width: 30%;
+    display: flex;
+    min-width: 250px;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #192f59;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchTerm:focus {
+    color: #192f59;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #192f59;
+    background: #192f59;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Not Found Css */
+.not-found {
+    height: 66vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px !important;
+    }
+}
+
+
+
+
+
+/* Copy Right Css */
+.copy-right p {
+    font-size: 15px;
+    color: grey;
+}
+
+@media screen and (max-width: 600px) {
+    .copy-right p {
+        font-size: 12px;
+    }
+
+    .not-found h1,
+    .not-found h3 {
+        font-size: 15px;
+    }
+}
